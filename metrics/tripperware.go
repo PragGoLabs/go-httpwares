@@ -8,7 +8,7 @@ import (
 	"net/http/httptrace"
 	"time"
 
-	"github.com/improbable-eng/go-httpwares"
+	"github.com/Solution/go-httpwares"
 )
 
 // Tripperware returns a new client-side ware that exports request metrics.

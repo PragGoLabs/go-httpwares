@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/improbable-eng/go-httpwares/metrics"
+	"github.com/Solution/go-httpwares/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

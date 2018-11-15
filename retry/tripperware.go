@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/improbable-eng/go-httpwares"
+	"github.com/Solution/go-httpwares"
 )
 
 // Tripperware is client side HTTP ware that retries the requests.

@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/improbable-eng/go-httpwares"
-	"github.com/improbable-eng/go-httpwares/logging"
+	"github.com/Solution/go-httpwares"
+	"github.com/Solution/go-httpwares/logging"
 	"github.com/sirupsen/logrus"
 )
 

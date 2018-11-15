@@ -7,7 +7,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/improbable-eng/go-httpwares/tags"
+	"github.com/Solution/go-httpwares/tags"
 	"github.com/opentracing/opentracing-go"
 )
 

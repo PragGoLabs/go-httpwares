@@ -1,8 +1,8 @@
 package http_logrus
 
 import (
-	"github.com/improbable-eng/go-httpwares"
-	"github.com/improbable-eng/go-httpwares/logging/logrus/ctxlogrus"
+	"github.com/Solution/go-httpwares"
+	"github.com/Solution/go-httpwares/logging/logrus/ctxlogrus"
 	"github.com/sirupsen/logrus"
 	"net/http"
 )

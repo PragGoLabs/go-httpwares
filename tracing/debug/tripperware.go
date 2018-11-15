@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/improbable-eng/go-httpwares"
-	"github.com/improbable-eng/go-httpwares/tags"
+	"github.com/Solution/go-httpwares"
+	"github.com/Solution/go-httpwares/tags"
 	"golang.org/x/net/trace"
 )
 

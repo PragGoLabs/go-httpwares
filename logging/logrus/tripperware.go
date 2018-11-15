@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/improbable-eng/go-httpwares"
+	"github.com/Solution/go-httpwares"
 	"github.com/sirupsen/logrus"
 )
 
