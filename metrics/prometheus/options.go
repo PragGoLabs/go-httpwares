@@ -4,11 +4,13 @@
 package http_prometheus
 
 type options struct {
-	name    string
-	latency bool
-	paths   bool
-	hosts   bool
-	sizes   bool
+	name                string
+	latency             bool
+	paths               bool
+	registerUniquePaths bool
+	uniquePaths         []string
+	hosts               bool
+	sizes               bool
 }
 
 type opt func(*options)
@@ -48,5 +50,13 @@ func WithPathLabel() opt {
 func WithSizes() opt {
 	return func(o *options) {
 		o.sizes = true
+	}
+}
+
+
+func RegisterUniquePaths(uniquePaths []string) opt {
+	return func(o *options) {
+		o.registerUniquePaths = true
+		o.uniquePaths = uniquePaths
 	}
 }
