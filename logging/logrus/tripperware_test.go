@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/improbable-eng/go-httpwares"
-	"github.com/improbable-eng/go-httpwares/logging/logrus"
+	"github.com/Solution/go-httpwares"
+	"github.com/Solution/go-httpwares/logging/logrus"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"

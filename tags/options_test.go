@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/improbable-eng/go-httpwares/tags"
+	"github.com/Solution/go-httpwares/tags"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -2,7 +2,7 @@ package ctxlogrus_test
 
 import (
 	"context"
-	"github.com/improbable-eng/go-httpwares/logging/logrus/ctxlogrus"
+	"github.com/Solution/go-httpwares/logging/logrus/ctxlogrus"
 	"github.com/sirupsen/logrus"
 )
 

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/improbable-eng/go-httpwares"
+	"github.com/Solution/go-httpwares"
 )
 
 // Middleware returns a http.Handler middleware that exports request metrics.

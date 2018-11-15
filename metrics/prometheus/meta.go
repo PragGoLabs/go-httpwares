@@ -5,13 +5,16 @@ package http_prometheus
 
 import (
 	"net/http"
+	"regexp"
 
-	"github.com/improbable-eng/go-httpwares/tags"
+	"github.com/Solution/go-httpwares/tags"
 )
 
 type meta struct {
 	name, handler, method, host, path string
 }
+
+var compiledPaths = map[string]*regexp.Regexp{}
 
 func reqMeta(req *http.Request, opts *options, inbound bool) *meta {
 	m := &meta{name: opts.name, method: req.Method}
@@ -44,8 +47,29 @@ func reqMeta(req *http.Request, opts *options, inbound bool) *meta {
 			m.host = req.Host
 		}
 	}
+
 	if opts.paths {
-		m.path = req.URL.Path
+		m.path = resolvePath(opts, req.URL.Path)
 	}
+
 	return m
+}
+
+
+func resolvePath(opts *options, path string) string {
+	if !opts.registerUniquePaths {
+		return path
+	}
+
+	for _, uniquePath := range opts.uniquePaths {
+		if compiledPaths[uniquePath] == nil {
+			compiledPaths[uniquePath] = regexp.MustCompile(uniquePath)
+		}
+
+		if compiledPaths[uniquePath].Match([]byte(path)) {
+			return uniquePath
+		}
+	}
+
+	return path
 }

@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/go-chi/chi"
-	"github.com/improbable-eng/go-httpwares"
-	"github.com/improbable-eng/go-httpwares/metrics"
-	"github.com/improbable-eng/go-httpwares/metrics/prometheus"
-	"github.com/improbable-eng/go-httpwares/tags"
+	"github.com/Solution/go-httpwares"
+	"github.com/Solution/go-httpwares/metrics"
+	"github.com/Solution/go-httpwares/metrics/prometheus"
+	"github.com/Solution/go-httpwares/tags"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

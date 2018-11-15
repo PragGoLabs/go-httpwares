@@ -11,10 +11,10 @@ import (
 
 	"strings"
 
-	"github.com/improbable-eng/go-httpwares"
-	"github.com/improbable-eng/go-httpwares/tags"
-	"github.com/improbable-eng/go-httpwares/testing"
-	"github.com/improbable-eng/go-httpwares/tracing/opentracing"
+	"github.com/Solution/go-httpwares"
+	"github.com/Solution/go-httpwares/tags"
+	"github.com/Solution/go-httpwares/testing"
+	"github.com/Solution/go-httpwares/tracing/opentracing"
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
